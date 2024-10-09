@@ -9,7 +9,11 @@ function getRandomColour() {
     const mainSection = document.querySelector(".sticky-notes")
     const card = document.createElement("div");
     const delButton = document.createElement("button");
-  
+
+    delButton.textContent = "X";
+    delButton.classList.add("delete-button");
+    delButton.addEventListener("click", () => card.remove())
+
     card.classList.add("sticky-note");
     card.textContent = document.querySelector("#new-note").value;
     document.querySelector("#new-note").value = "";
