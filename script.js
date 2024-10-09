@@ -10,6 +10,8 @@ function getRandomColour() {
     const card = document.createElement("div");
     const delButton = document.createElement("button");
 
+    // this code is to delete notes
+    
     delButton.textContent = "X";
     delButton.classList.add("delete-button");
     delButton.addEventListener("click", () => card.remove())
